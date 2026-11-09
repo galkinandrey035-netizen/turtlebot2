@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "turtlebot",
+  "version": "${version}",
+  "name": "TurtleBot",
+  "description": "Клиентский бот: кормит взрослых черепах морской травой из сундука.",
+  "authors": ["TurtleBot"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["ru.turtlebot.TurtleBotClient"],
+    "modmenu": ["ru.turtlebot.gui.ModMenuIntegration"]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "modmenu": "*",
+    "cloth-config": "*"
+  }
+}
